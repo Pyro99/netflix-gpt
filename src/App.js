@@ -1,7 +1,9 @@
-import './App.css';
+import Body from './components/Body';
 
 function App() {
-  return <div className='text-2xl text-red-700'>Hello from Tailwind</div>;
+  return (
+    <Body />
+  )
 }
 
 export default App;

@@ -33,7 +33,10 @@
     - Built Movie List
     - Built Movie Card
     - Made the Browse Page amazing with Tailwind CSS
-    - Created usePopularMovies custom hook
+    - Created usePopularMovies,useTopRatedMovies,useUpcomingMovies custom hook
+    - GPT Search Page
+    - GPT Search Bar
+    - (BONUS) Multi-language feature in the app
 
 #  Features
 

@@ -1,5 +1,6 @@
 # Netlix GPT
 
+  #  Steps
     - Create React App
     - Configured TailwindCSS
     - Header
@@ -28,6 +29,11 @@
     - Update store with Trailer Video Data
     - Embedded the Youtube Video and make it autoplay on mute
     - Added Tailwind classes to make Main Container look awsome
+    - Build Secondary Container
+    - Built Movie List
+    - Built Movie Card
+    - Made the Browse Page amazing with Tailwind CSS
+    - Created usePopularMovies custom hook
 
 #  Features
 
@@ -38,7 +44,7 @@
     - Trailer in Background
     - Title & Description
     - Movie Suggestions
-      - Movie Lists \* N
+      - Movie Lists * N
 - Netflix GPT
   - Search Bar
   - Movie Suggestions

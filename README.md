@@ -37,6 +37,14 @@
     - GPT Search Page
     - GPT Search Bar
     - (BONUS) Multi-language feature in the app
+    - GPT Search Open AI Api Key
+    - GPT Search API call
+    - Fetched GPT Movie Suggestions from TMDB
+    - Created GPT slice and added data
+    - Reused MovieList component to make movie suggestion container 
+    - Memoization
+    - Added .env file
+    - Made the app responsive
 
 #  Features
 

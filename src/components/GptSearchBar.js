@@ -46,14 +46,16 @@ const GptSearchBar = () => {
 
     const tmdbResults = await Promise.all(promiseArray);
     console.log(tmdbResults);
-    dispatch(addGptMovieResult({movieNames:gptMovies, movieResults:tmdbResults}));
+    dispatch(
+      addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults })
+    );
   };
 
   return (
-    <div className='pt-[10%] flex justify-center'>
+    <div className='pt-[45%] md:pt-[10%] flex justify-center'>
       <form
         onSubmit={(e) => e.preventDefault()}
-        className='w-1/2 bg-black grid grid-cols-12 rounded-lg'
+        className='w-full md:w-1/2 bg-black grid grid-cols-12 rounded-lg'
       >
         <input
           ref={searchText}
@@ -62,7 +64,7 @@ const GptSearchBar = () => {
           placeholder={lang[langKey].gptSearchPlaceholder}
         />
         <button
-          className='py-2 px-4 m-4 bg-red-700 text-white rounded-lg col-span-3 '
+          className='text-sm py-1 px-2 md:text-base md:py-2 m-4 bg-red-700 text-white rounded-lg col-span-3 '
           onClick={handleGptSearchClick}
         >
           {lang[langKey].search}

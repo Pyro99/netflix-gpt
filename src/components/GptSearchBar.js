@@ -23,8 +23,6 @@ const GptSearchBar = () => {
   };
 
   const handleGptSearchClick = async () => {
-    console.log(searchText.current.value);
-
     const gptQuery =
       'Act as a Movie Recommendation System and suggest some movies for the query' +
       searchText.current.value +
@@ -34,18 +32,11 @@ const GptSearchBar = () => {
       messages: [{ role: 'user', content: gptQuery }],
       model: 'gpt-3.5-turbo',
     });
-
-    if (!gptResults.choices) {
-      //todo : error handling
-    }
-
-    console.log(gptResults.choices[0]?.message.content);
     const gptMovies = gptResults.choices[0]?.message.content.split(',');
 
     const promiseArray = gptMovies.map((movie) => searchMovieTMBD(movie));
 
     const tmdbResults = await Promise.all(promiseArray);
-    console.log(tmdbResults);
     dispatch(
       addGptMovieResult({ movieNames: gptMovies, movieResults: tmdbResults })
     );

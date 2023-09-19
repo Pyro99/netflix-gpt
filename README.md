@@ -1,6 +1,7 @@
 # Netlix GPT
 
   #  Steps
+  
     - Create React App
     - Configured TailwindCSS
     - Header

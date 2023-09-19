@@ -6,7 +6,7 @@ import { POSTER } from '../utils/constants';
 const GptSearch = () => {
   return (
     <div>
-      <div className='absolute -z-10'>
+      <div className='fixed -z-10'>
         <img
           src={POSTER}
           alt='logo'
